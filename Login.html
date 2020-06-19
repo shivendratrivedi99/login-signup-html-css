@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="1000">
+    <link href="cssmain.css" type="text/css" rel="stylesheet" />
+    <title>Login</title>
+    <script>
+        var name=document.getElementById('name');
+    </script>
+</head>
+
+<body>
+    <div class="page_tile">
+        <h1>Singularity</h1>
+    </div>
+    <div class="main_container">
+        <!-- <div class="back"></div> -->
+        <div class="signup_block">
+
+
+            <div class="top_panel">
+                <div class="content" onclick="changeActive()">Sign In</div>
+                <div class="content" id="active" onclick="changeActive()">Signup</div>
+
+            </div>
+            </br>
+            <div class="p">
+                <p>Create your first account</p>
+            </div>
+
+            <form action="success.html" method="POST">
+                <input id="name"class="minwidth" type="text" placeholder="First Name" name="name" required>
+                <input class="minwidth" type="text" placeholder="Last Name" name="name" required></br>
+                <input type="email" placeholder="email" name="email" required></br>
+                <input type="tel" placeholder="Mobile Number" name="phoneno" pattern="[0-9]{10}" required></br>
+                <input type="password" placeholder="Password" name="password" required>
+                <div class="check">
+                    <div class="check_container">
+                        <input type="checkbox" required>
+                    </div>
+                    <div></div>
+                    I agree to <a href="#">terms and conditions</a>
+                    and
+                    <a href="#">privacy policy</a>
+                </div>
+                </br>
+                </br>
+                <input id="submit" type="submit" class="submit-btn" name="confirm" style="float: none"></br>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
